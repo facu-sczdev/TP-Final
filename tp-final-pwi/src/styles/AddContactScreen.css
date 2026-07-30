@@ -10,16 +10,15 @@
 .add-contact-card {
   background: white;
   border-radius: 16px;
-  padding: 40px;
+  padding: clamp(24px, 4vw, 40px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  max-width: 400px;
+  width: min(100%, 420px);
 }
 
 .add-contact-card h2 {
   margin: 0 0 30px;
   color: #1f2937;
-  font-size: 24px;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   font-weight: 700;
   text-align: center;
 }
@@ -50,6 +49,7 @@
   outline: none;
   transition: all 0.3s ease;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .form-input:focus {
@@ -61,6 +61,7 @@
   display: flex;
   gap: 12px;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -71,7 +72,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  flex: 1;
+  flex: 1 1 140px;
 }
 
 .btn-primary {
@@ -91,4 +92,14 @@
 
 .btn-secondary:hover {
   background: #e5e7eb;
+}
+
+@media (max-width: 480px) {
+  .add-contact-container {
+    padding: 12px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
 }

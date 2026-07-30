@@ -39,7 +39,7 @@
 
 .contact-item h4 {
     margin: 0;
-    font-size: 15px;
+    font-size: clamp(0.9rem, 1.5vw, 0.95rem);
     font-weight: 600;
     color: #1f2937;
 }
@@ -51,4 +51,17 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .contact-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
+    }
 }

@@ -6,15 +6,27 @@
 }
 
 .chat-screen-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   padding: 16px 20px;
   border-bottom: 1px solid #d1d5db;
   background: white;
 }
 
+.chat-screen-back {
+  border: none;
+  background: transparent;
+  color: #075e54;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
 .chat-screen-header h3 {
   margin: 0;
   color: #075e54;
-  font-size: 18px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 .chat-screen-empty {
@@ -24,9 +36,17 @@
   height: 100%;
   background-color: #ece5dd;
   color: #999;
+  padding: 20px;
+  text-align: center;
 }
 
 .chat-screen-empty h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+@media (max-width: 480px) {
+  .chat-screen-header {
+    padding: 12px 14px;
+  }
 }
