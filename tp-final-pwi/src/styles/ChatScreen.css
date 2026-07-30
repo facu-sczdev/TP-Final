@@ -1,0 +1,32 @@
+.chat-screen {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ece5dd;
+}
+
+.chat-screen-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #d1d5db;
+  background: white;
+}
+
+.chat-screen-header h3 {
+  margin: 0;
+  color: #075e54;
+  font-size: 18px;
+}
+
+.chat-screen-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ece5dd;
+  color: #999;
+}
+
+.chat-screen-empty h3 {
+  margin: 0;
+  font-size: 16px;
+}
